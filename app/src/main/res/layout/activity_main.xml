@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Tic tac toe"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#1AA195"
+        android:textColor="#FFFFFF"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+        android:padding="60dp"
+
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:onClick="check"
+            app:cornerRadius="35dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:backgroundTint="@color/button"
+
+
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/button"
+            android:onClick="check"
+            android:textStyle="bold"
+            app:cornerRadius="35dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textSize="25sp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn3"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/button"
+
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:cornerRadius="35dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="check"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn4"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            app:cornerRadius="35dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/button"
+            android:onClick="check"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/button"
+            android:textStyle="bold"
+            app:cornerRadius="35dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textSize="25sp"
+            android:onClick="check"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/button"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:cornerRadius="35dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="check"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn7"
+            android:textStyle="bold"
+            android:backgroundTint="@color/button"
+            app:cornerRadius="35dp"
+            android:layout_width="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="70dp"
+            android:textSize="25sp"
+            android:onClick="check"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/button"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:cornerRadius="35dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="check"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn9"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/button"
+            android:textStyle="bold"
+            app:cornerRadius="35dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textSize="25sp"
+            android:onClick="check"/>
+    </GridLayout>
+
+
+
+</LinearLayout>
